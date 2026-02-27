@@ -199,8 +199,10 @@ docker compose -f deploy/docker-compose.yml up -d
 
 # 3. Deploy and run your first agent
 cargo install aegis-orchestrator
-aegis agent deploy agents/hello-world/agent.yaml
-aegis agent execute --agent hello-world --input '{"task": "Write a Python function that validates email addresses"}'
+aegis agent deploy ./agents/hello-world/agent.yaml
+aegis task execute hello-world \
+  --input '{"task": "Write a Python function that returns the Fibonacci sequence up to n."}' \
+  --follow
 ```
 
 Watch the loop run:
