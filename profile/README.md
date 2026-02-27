@@ -60,10 +60,10 @@ Traditional AI pipelines treat model output as a **final answer**. We treat it a
 │                 │        ❌ Iteration 2: TypeError in line 47               │
 │                 │        🔄 Iteration 3: Fixing type annotation...          │
 │                 │        ✅ Iteration 3: All validators passed              │
-│                 │                                                            │
-│             LLM output is a                                                  │
-│             candidate, not                                                   │
-│             a commitment.                                                    │
+│                 │                                                           │
+│             LLM output is a                                                 │
+│             candidate, not                                                  │
+│             a commitment.                                                   │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
