@@ -303,8 +303,6 @@ Execution 847: The pattern has been reinforced 800 times.
 
 Patterns compose into Skills. Skills persist across restarts, upgrades, and model swaps. The intelligence is **in the runtime**, not in the model weights.
 
-**Phase 3 Vision:** Users trade *Evolutionary Traits* — patterns, skills, and capabilities — across AEGIS installations on an open marketplace. Every install makes every other install smarter. A living, distributed Cortex hive.
-
 ---
 
 ## The License Philosophy
