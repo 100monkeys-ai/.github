@@ -194,13 +194,12 @@ git clone https://github.com/100monkeys-ai/aegis-examples.git
 cd aegis-examples
 
 # 2. Spin up the full AEGIS stack
-cp .env.example .env          # Add your API key
-docker compose up -d
+cp .env.example .env
+docker compose -f deploy/docker-compose.yml up -d
 
 # 3. Deploy and run your first agent
 cargo install aegis-orchestrator
-cd agents/hello-world
-aegis agent deploy manifest.yaml
+aegis agent deploy agents/hello-world/agent.yaml
 aegis agent execute --agent hello-world --input '{"task": "Write a Python function that validates email addresses"}'
 ```
 
