@@ -218,7 +218,7 @@ Executing agent 88b73d1b-0da0-4b92-9376-fd744b9cafbf...
 ```
 
 → **Full documentation:** [docs.100monkeys.ai](https://docs.100monkeys.ai)
-→ **Write your first manifest:** [docs.100monkeys.ai/quickstart](https://docs.100monkeys.ai/quickstart)
+→ **Create your first agent:** [docs.100monkeys.ai/docs/guides/writing-agents](docs.100monkeys.ai/docs/guides/writing-agents)
 
 ---
 
