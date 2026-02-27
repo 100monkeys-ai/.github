@@ -208,11 +208,13 @@ aegis task execute hello-world \
 Watch the loop run:
 
 ```markdown
-[aegis] Execution abc-123 started
-  ❌ Iteration 1 FAILED   — SyntaxError: invalid syntax (line 12)
-  🔄 Refining...          — Injecting error context into next iteration
-  ✅ Iteration 2 SUCCESS  — All 5 validators passed (score: 0.97)
-[aegis] Pattern stored → Cortex (weight: 1, skill: python-syntax)
+2026-02-25T13:56:43.091943Z  INFO Delegating to daemon API
+Executing agent 88b73d1b-0da0-4b92-9376-fd744b9cafbf...
+✓ Execution started: f668f593-370f-4c19-b043-0487e9bd1ae5
+[2026-02-25T13:56:43.140898+00:00] Execution started
+[2026-02-25T13:56:43.164238272+00:00] Iteration 1
+[2026-02-25T13:57:34.455428513+00:00] LLM [default]
+[STDOUT] "First, I would write the required `fib_sequence` function in `/workspace/solution.py`:
 ```
 
 → **Full documentation:** [docs.100monkeys.ai](https://docs.100monkeys.ai)
