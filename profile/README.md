@@ -162,6 +162,7 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 | Repository | What It Is | Language |
 | --- | --- | --- |
 | [**aegis-orchestrator**](https://github.com/100monkeys-ai/aegis-orchestrator) | The beating heart. Agent lifecycle, execution engine, 100monkeys loop, Firecracker/Docker runtimes, SMCP gateway, gRPC API, CLI. | ![Rust](https://img.shields.io/badge/-Rust-000?logo=rust) |
+| [**aegis-smcp-gateway**](https://github.com/100monkeys-ai/aegis-smcp-gateway) | Standalone SMCP tooling gateway for macro-tools (`ToolWorkflow`) and secure external tool invocation. | ![Rust](https://img.shields.io/badge/-Rust-000?logo=rust) |
 | [**secure-model-context-protocol**](https://github.com/100monkeys-ai/secure-model-context-protocol) | SMCP specification and SDK. Cryptographically signed MCP envelopes with Cedar policy evaluation. | ![Mixed](https://img.shields.io/badge/-Spec-lightgrey) |
 | [**aegis-proto**](https://github.com/100monkeys-ai/aegis-proto) | Protobuf definitions for the AEGIS gRPC API surface. | ![Proto](https://img.shields.io/badge/-Proto-blue) |
 | [**aegis-temporal-worker**](https://github.com/100monkeys-ai/aegis-temporal-worker) | Temporal.io durable workflow worker for long-running, fault-tolerant executions. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
@@ -218,7 +219,7 @@ Executing agent 88b73d1b-0da0-4b92-9376-fd744b9cafbf...
 ```
 
 → **Full documentation:** [docs.100monkeys.ai](https://docs.100monkeys.ai)
-→ **Create your first agent:** [docs.100monkeys.ai/docs/guides/writing-agents](docs.100monkeys.ai/docs/guides/writing-agents)
+→ **Create your first agent:** [docs.100monkeys.ai/docs/guides/writing-agents](https://docs.100monkeys.ai/docs/guides/writing-agents)
 
 ---
 
