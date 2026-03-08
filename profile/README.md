@@ -187,20 +187,17 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 
 ## Get Started in 3 Minutes
 
-**Prerequisites:** Docker, Docker Compose, an OpenAI or Anthropic API key (or a local Ollama instance).
+**Prerequisites:** Docker installed locally (the `aegis init` flow handles stack setup).
 
 ```bash
-# 1. Clone the examples repo
-git clone https://github.com/100monkeys-ai/aegis-examples.git
-cd aegis-examples
+# 1. Install AEGIS CLI
+curl -fsSL https://raw.githubusercontent.com/100monkeys-ai/aegis-examples/main/install.sh | bash
 
-# 2. Spin up the full AEGIS stack
-cp .env.example .env
-docker compose -f deploy/docker-compose.yml up -d
+# 2. Verify installation
+aegis --version
 
-# 3. Deploy and run your first agent
-cargo install aegis-orchestrator
-aegis agent deploy ./agents/hello-world/agent.yaml
+# 3. Initialize local stack and run hello-world
+aegis init
 aegis task execute hello-world \
   --input '{"task": "Write a Python function that returns the Fibonacci sequence up to n."}' \
   --follow
