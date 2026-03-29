@@ -125,7 +125,7 @@ Security is moved **out of the probabilistic layer** (the LLM) and **into the de
 
 ### 🌐 Zaru — [myzaru.com](https://myzaru.com)
 
-The consumer AI product. A LibreChat front-end wired directly into the AEGIS execution engine.
+The consumer AI product. A custom Zaru client wired directly into the AEGIS execution engine (ADR-071).
 
 Describe what you want. Zaru generates an agent manifest, runs the 100monkeys loop, and shows you the **Glass Laboratory** — every iteration attempt, every failure, every refinement, live.
 
@@ -135,9 +135,9 @@ Tiers: Free · Pro · Enterprise
 
 ---
 
-### 🎛️ Control Plane — AEGIS Operator Dashboard
+### 🎛️ Zaru Client — Unified Operator & Consumer Console
 
-Three instruments for operators building on AEGIS:
+The Zaru client (`zaru-client`) is the single interface for both operators and consumers, powered by AEGIS (ADR-071). Three instruments built in:
 
 - **The Architect** — Turn natural language intent into production-ready agent YAML manifests
 - **The Synapse** — Watch the 100monkeys loop execute in real time
@@ -173,7 +173,7 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 | --- | --- | --- |
 | [**aegis-sdk-python**](https://github.com/100monkeys-ai/aegis-sdk-python) | Python client SDK. Type-safe manifest construction, execution watching. | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) |
 | [**aegis-sdk-typescript**](https://github.com/100monkeys-ai/aegis-sdk-typescript) | TypeScript/JS client SDK. Same surface, same guarantees, better DX. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
-| [**aegis-mcp-tools**](https://github.com/100monkeys-ai/aegis-mcp-tools) | Curated MCP server implementations, including the Zaru MCP server for LibreChat. | ![Mixed](https://img.shields.io/badge/-Mixed-lightgrey) |
+| [**aegis-mcp-tools**](https://github.com/100monkeys-ai/aegis-mcp-tools) | Curated MCP server implementations, including the Zaru MCP server for the Zaru client. | ![Mixed](https://img.shields.io/badge/-Mixed-lightgrey) |
 | [**aegis-examples**](https://github.com/100monkeys-ai/aegis-examples) | Example agents — `hello-world`, `coder`, `code-reviewer`, `container-test` — plus the full Docker Compose stack to run them. **Start here.** | ![YAML](https://img.shields.io/badge/-YAML-red) |
 
 ### 📚 Knowledge & Community
