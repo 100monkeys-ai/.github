@@ -125,7 +125,7 @@ Security is moved **out of the probabilistic layer** (the LLM) and **into the de
 
 ### 🌐 Zaru — [myzaru.com](https://myzaru.com)
 
-The consumer AI product. A custom Zaru client wired directly into the AEGIS execution engine (ADR-071).
+The consumer AI product. A custom Zaru client wired directly into the AEGIS execution engine.
 
 Describe what you want. Zaru generates an agent manifest, runs the 100monkeys loop, and shows you the **Glass Laboratory** — every iteration attempt, every failure, every refinement, live.
 
@@ -137,7 +137,7 @@ Tiers: Free · Pro · Enterprise
 
 ### 🎛️ Zaru Client — Unified Operator & Consumer Console
 
-The Zaru client (`zaru-client`) is the single interface for both operators and consumers, powered by AEGIS (ADR-071). Three instruments built in:
+The Zaru client (`zaru-client`) is the single interface for both operators and consumers, powered by AEGIS. Three instruments built in:
 
 - **The Architect** — Turn natural language intent into production-ready agent YAML manifests
 - **The Synapse** — Watch the 100monkeys loop execute in real time
