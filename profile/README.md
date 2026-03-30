@@ -197,7 +197,7 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 
 ```bash
 # 1. Install AEGIS CLI
-curl -fsSL https://raw.githubusercontent.com/100monkeys-ai/aegis-examples/main/install.sh | bash
+curl -fsSL https://get.100monkeys.ai | bash
 
 # 2. Verify installation
 aegis --version
