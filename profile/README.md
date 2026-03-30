@@ -167,14 +167,20 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 | [**aegis-proto**](https://github.com/100monkeys-ai/aegis-proto) | Protobuf definitions for the AEGIS gRPC API surface. | ![Proto](https://img.shields.io/badge/-Proto-blue) |
 | [**aegis-temporal-worker**](https://github.com/100monkeys-ai/aegis-temporal-worker) | Temporal.io durable workflow worker for long-running, fault-tolerant executions. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
 
-### 🖥️ Interfaces & SDKs
+### 🖥️ SDKs & Developer Tools
 
 | Repository | What It Is | Language |
 | --- | --- | --- |
-| [**aegis-sdk-python**](https://github.com/100monkeys-ai/aegis-sdk-python) | Python client SDK. Type-safe manifest construction, execution watching. | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) |
-| [**aegis-sdk-typescript**](https://github.com/100monkeys-ai/aegis-sdk-typescript) | TypeScript/JS client SDK. Same surface, same guarantees, better DX. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
-| [**aegis-mcp-tools**](https://github.com/100monkeys-ai/aegis-mcp-tools) | Curated MCP server implementations, including the Zaru MCP server for the Zaru client. | ![Mixed](https://img.shields.io/badge/-Mixed-lightgrey) |
-| [**aegis-examples**](https://github.com/100monkeys-ai/aegis-examples) | Example agents — `hello-world`, `coder`, `code-reviewer`, `container-test` — plus the full Docker Compose stack to run them. **Start here.** | ![YAML](https://img.shields.io/badge/-YAML-red) |
+| [**aegis-sdk-python**](https://github.com/100monkeys-ai/aegis-sdk-python) | Official Python SDK. Type-safe manifest construction, async/await, execution watching. | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) |
+| [**aegis-sdk-typescript**](https://github.com/100monkeys-ai/aegis-sdk-typescript) | Official TypeScript/JS SDK. Same surface, same guarantees. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
+| [**aegis-mcp-tools**](https://github.com/100monkeys-ai/aegis-mcp-tools) | Secure MCP gateway proxying tool calls to AEGIS via SMCP envelope signing. | ![Mixed](https://img.shields.io/badge/-Mixed-lightgrey) |
+| [**aegis-examples**](https://github.com/100monkeys-ai/aegis-examples) | Example agents and full Docker Compose stack. **Start here.** | ![YAML](https://img.shields.io/badge/-YAML-red) |
+
+### 🚀 Deployment
+
+| Repository | What It Is | Language |
+| --- | --- | --- |
+| [**aegis-deploy**](https://github.com/100monkeys-ai/aegis-deploy) | Podman-based deployment for the AEGIS platform. Supports minimal, development, and full profiles. | ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnubash&logoColor=white) |
 
 ### 📚 Knowledge & Community
 
