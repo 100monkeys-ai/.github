@@ -112,7 +112,7 @@ Security is moved **out of the probabilistic layer** (the LLM) and **into the de
 
 - 🦀 **Rust** — Memory-safe runtime. No footguns in the enforcement layer.
 - 🔥 **Firecracker Micro-VMs** — AWS's production-grade isolation. `rm -rf /` is a localized event.
-- 🔏 **SMCP** — Secure Model Context Protocol. Every tool call is cryptographically signed with an ephemeral Ed25519 key, wrapped in a security envelope, and evaluated against Cedar policies before execution.
+- 🔏 **SEAL** — Signed Envelope Attestation Layer. Every tool call is cryptographically signed with an ephemeral Ed25519 key, wrapped in a security envelope, and evaluated against Cedar policies before execution.
 - 🔑 **OpenBao** — Secrets never touch agents. The orchestrator holds all credentials behind the Keymaster Pattern.
 - 🚪 **AegisFSAL** — Transport-agnostic File System Abstraction Layer. Every file operation passes through the orchestrator's security gateway with per-operation authorization, path traversal prevention, and a forensic audit trail.
 - 🏛️ **Keycloak** — Single trusted OIDC identity issuer across every surface: UI, API, gRPC, M2M.
@@ -161,9 +161,9 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 
 | Repository | What It Is | Language |
 | --- | --- | --- |
-| [**aegis-orchestrator**](https://github.com/100monkeys-ai/aegis-orchestrator) | The beating heart. Agent lifecycle, execution engine, 100monkeys loop, Firecracker/Docker runtimes, SMCP gateway, gRPC API, CLI. | ![Rust](https://img.shields.io/badge/-Rust-000?logo=rust) |
-| [**aegis-smcp-gateway**](https://github.com/100monkeys-ai/aegis-smcp-gateway) | Standalone SMCP tooling gateway for macro-tools (`ToolWorkflow`) and secure external tool invocation. | ![Rust](https://img.shields.io/badge/-Rust-000?logo=rust) |
-| [**secure-model-context-protocol**](https://github.com/100monkeys-ai/secure-model-context-protocol) | SMCP specification and SDK. Cryptographically signed MCP envelopes with Cedar policy evaluation. | ![Mixed](https://img.shields.io/badge/-Spec-lightgrey) |
+| [**aegis-orchestrator**](https://github.com/100monkeys-ai/aegis-orchestrator) | The beating heart. Agent lifecycle, execution engine, 100monkeys loop, Firecracker/Docker runtimes, SEAL gateway, gRPC API, CLI. | ![Rust](https://img.shields.io/badge/-Rust-000?logo=rust) |
+| [**aegis-seal-gateway**](https://github.com/100monkeys-ai/aegis-seal-gateway) | Standalone SEAL tooling gateway for macro-tools (`ToolWorkflow`) and secure external tool invocation. | ![Rust](https://img.shields.io/badge/-Rust-000?logo=rust) |
+| [**seal-protocol**](https://github.com/100monkeys-ai/seal-protocol) | SEAL specification and SDK. Cryptographically signed MCP envelopes with Cedar policy evaluation. | ![Mixed](https://img.shields.io/badge/-Spec-lightgrey) |
 | [**aegis-proto**](https://github.com/100monkeys-ai/aegis-proto) | Protobuf definitions for the AEGIS gRPC API surface. | ![Proto](https://img.shields.io/badge/-Proto-blue) |
 | [**aegis-temporal-worker**](https://github.com/100monkeys-ai/aegis-temporal-worker) | Temporal.io durable workflow worker for long-running, fault-tolerant executions. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
 
@@ -173,7 +173,7 @@ Drop-in replacement for any `openai` client. Use Llama. Pay $0.
 | --- | --- | --- |
 | [**aegis-sdk-python**](https://github.com/100monkeys-ai/aegis-sdk-python) | Official Python SDK. Type-safe manifest construction, async/await, execution watching. | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) |
 | [**aegis-sdk-typescript**](https://github.com/100monkeys-ai/aegis-sdk-typescript) | Official TypeScript/JS SDK. Same surface, same guarantees. | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
-| [**aegis-mcp-tools**](https://github.com/100monkeys-ai/aegis-mcp-tools) | Secure MCP gateway proxying tool calls to AEGIS via SMCP envelope signing. | ![Mixed](https://img.shields.io/badge/-Mixed-lightgrey) |
+| [**aegis-mcp-tools**](https://github.com/100monkeys-ai/aegis-mcp-tools) | Secure MCP gateway proxying tool calls to AEGIS via SEAL envelope signing. | ![Mixed](https://img.shields.io/badge/-Mixed-lightgrey) |
 | [**aegis-examples**](https://github.com/100monkeys-ai/aegis-examples) | Example agents and full Docker Compose stack. **Start here.** | ![YAML](https://img.shields.io/badge/-YAML-red) |
 
 ### 🚀 Deployment
@@ -281,7 +281,7 @@ The manifest is the contract. The orchestrator enforces it. The LLM operates ins
 | System-wide learning | ✅ Cortex (persists forever) | ❌ Thread-scoped | ❌ None |
 | Self-hostable | ✅ Full control | ❌ | ⚠️ DIY |
 | BYOLLM | ✅ Any model, any provider | ❌ OpenAI only | ⚠️ Complex |
-| Compliance-ready audit trail | ✅ Cryptographic (SMCP) | ⚠️ Cloud logs | ❌ Manual |
+| Compliance-ready audit trail | ✅ Cryptographic (SEAL) | ⚠️ Cloud logs | ❌ Manual |
 | Cost model | ✅ Local + cloud hybrid, $0 Llama | 💸 Token-metered | 💸 Pass-through |
 | Security model | ✅ Deterministic (physics) | 🎲 Probabilistic (ToS) | 🎲 Probabilistic (prompt) |
 
