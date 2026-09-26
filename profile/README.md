@@ -72,13 +72,17 @@ Traditional AI pipelines treat model output as a **final answer**. We treat it a
 **The Core Claim:**
 > *"We don't need the model to be perfect. We need the system to be rigorous."*
 
-A cheap local model (`llama3.1`) in a rigorous loop outperforms GPT-4 on a single shot. **Trade compute for IQ.**
+Probabilistic AI becomes deterministic, validated behavior through iterative refinement. **Every error becomes a pattern; every refinement makes the system smarter.**
+
+We do not publish a success rate. We publish what the record shows:
 
 ```markdown
-Success Rate Evolution:
-  Week 1:   60% ██████░░░░
-  Month 1:  85% ████████░░
-  Month 3:  95% █████████░   ← the Cortex effect
+Every change that reaches a main branch carries:
+  ✓ the CI run that passed
+  ✓ the test count, re-derived on the merged tree
+  ✓ the printed failure sentence of each new check, watched red before it went green
+
+And the process keeps registers of its own defects and its own coordinator mistakes.
 ```
 
 ---
