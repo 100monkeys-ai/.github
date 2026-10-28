@@ -32,6 +32,10 @@ AEGIS is a self-hosted orchestrator that runs autonomous agents in isolated, pol
 curl -fsSL https://get.100monkeys.ai | bash
 ```
 
+### Community
+
+[Awesome Agent Traceability](https://github.com/100monkeys-ai/awesome-agent-traceability): a curated list of open tools, standards and papers for traceable, auditable and replayable AI agent systems, which we keep at 100monkeys.ai. Additions are welcome by pull request.
+
 ---
 
 ## The Problem
