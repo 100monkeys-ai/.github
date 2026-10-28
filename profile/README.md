@@ -5,11 +5,10 @@
 **The autonomous AI agent runtime built on biology's 3.5-billion-year head start.**
 
 [![Docs](https://img.shields.io/badge/docs-docs.100monkeys.ai-00e5ff?style=flat-square&logo=gitbook&logoColor=white)](https://docs.100monkeys.ai)
-[![Discord](https://img.shields.io/badge/Discord-Join%20the%20Troop-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.100monkeys.ai)
+[![Discussions](https://img.shields.io/badge/GitHub-Discussions-5865F2?style=flat-square&logo=github&logoColor=white)](https://github.com/orgs/100monkeys-ai/discussions)
 [![Community](https://img.shields.io/badge/Community-troop.100monkeys.ai-ff2d78?style=flat-square&logo=discourse&logoColor=white)](https://troop.100monkeys.ai)
-[![Cloud Waitlist](https://img.shields.io/badge/Cloud-Q2%202026%20Waitlist-ffd700?style=flat-square&logo=rocket&logoColor=black)](https://100monkeys.ai)
 [![License](https://img.shields.io/badge/License-AGPL--3.0-brightgreen?style=flat-square)](https://github.com/100monkeys-ai/aegis-orchestrator/blob/main/LICENSE)
-[![Self-Host](https://img.shields.io/badge/Self--Host-Available%20Now-00e5ff?style=flat-square&logo=docker&logoColor=white)](https://docs.100monkeys.ai/self-hosting)
+[![Self-Host](https://img.shields.io/badge/Self--Host-Available%20Now-00e5ff?style=flat-square&logo=docker&logoColor=white)](https://docs.100monkeys.ai/docs/getting-started)
 
 ---
 
@@ -27,7 +26,7 @@ Your Zaru is a personal AI assistant at myzaru.com that helps with messages, pla
 
 ### [AEGIS](https://100monkeys.ai/?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)
 
-AEGIS is a self-hosted orchestrator that runs autonomous agents in isolated, policy-enforced runtimes with durable FSM state. Open source, AGPL-3.0, pre-alpha: [aegis-orchestrator](https://github.com/100monkeys-ai/aegis-orchestrator). Install:
+AEGIS is a self-hosted orchestrator that runs autonomous agents in isolated, policy-enforced runtimes with durable FSM state. Open source, AGPL-3.0, in beta: [aegis-orchestrator](https://github.com/100monkeys-ai/aegis-orchestrator). Questions and ideas: [Discussions](https://github.com/orgs/100monkeys-ai/discussions). Install:
 
 ```bash
 curl -fsSL https://get.100monkeys.ai | bash
@@ -348,9 +347,9 @@ Patterns compose into Skills. Skills persist across restarts, upgrades, and mode
 
 > *"We are not betting on the Monkey. We are betting on the Loop."*
 
-[📖 **Documentation**](https://docs.100monkeys.ai) · [💬 **Discord**](https://discord.100monkeys.ai) · [🌐 **Community**](https://troop.100monkeys.ai) · [🚀 **Cloud Waitlist**](https://100monkeys.ai) · [🐒 **Try Zaru**](https://myzaru.com) · [📧 **Investors**](mailto:invest@100monkeys.ai)
+[📖 **Documentation**](https://docs.100monkeys.ai) · [💬 **Discussions**](https://github.com/orgs/100monkeys-ai/discussions) · [🌐 **Community**](https://troop.100monkeys.ai) · [🐒 **Try Zaru**](https://myzaru.com) · [📧 **Investors**](mailto:invest@100monkeys.ai)
 
-> *Pre-alpha · Self-host available now · Cloud launching Q2 2026*
+> *In beta · Self-host available now*
 
 ---
 
