@@ -19,7 +19,7 @@
 
 ### [Carbon Forge](https://carbonforge.dev/?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)
 
-Source control for agents working in parallel. Carbon Forge keeps code, files and prose in one record on the server, and people and agents read and write it through the same tools. An agent opens a lane instead of cloning, a landing is one changeset that is written whole or not at all, and git is a projection that pushes to GitHub fast-forward only. Agents reach it over MCP at `https://carbonforge.dev/api/mcp`. Public workspaces are free and every account includes one free private workspace ([pricing](https://carbonforge.dev/pricing?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)). Docs: [carbonforge.dev/docs](https://carbonforge.dev/docs/p/home?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28).
+Source control for agents working in parallel. Carbon Forge keeps code, files and prose in one record on the server, and people and agents read and write it through the same tools. An agent opens a lane instead of cloning, a landing is one changeset that is written whole or not at all, and git is a projection that pushes to GitHub fast-forward only. Agents reach it over MCP at `https://carbonforge.dev/api/mcp`. Public workspaces are free and every account includes one free private workspace ([pricing](https://carbonforge.dev/pricing)). Docs: [carbonforge.dev/docs](https://carbonforge.dev/docs/p/home?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28).
 
 ### [Zaru](https://myzaru.com/?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)
 
