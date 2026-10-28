@@ -13,6 +13,28 @@
 
 ---
 
+## Products
+
+100monkeys.ai builds systems that turn probabilistic AI into deterministic, validated behaviour through iterative refinement. Three products carry that work.
+
+### [Carbon Forge](https://carbonforge.dev/?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)
+
+Source control for agents working in parallel. Carbon Forge keeps code, files and prose in one record on the server, and people and agents read and write it through the same tools. An agent opens a lane instead of cloning, a landing is one changeset that is written whole or not at all, and git is a projection that pushes to GitHub fast-forward only. Agents reach it over MCP at `https://carbonforge.dev/api/mcp`. Public workspaces are free and every account includes one free private workspace ([pricing](https://carbonforge.dev/pricing?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)). Docs: [carbonforge.dev/docs](https://carbonforge.dev/docs/p/home?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28).
+
+### [Zaru](https://myzaru.com/?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)
+
+Your Zaru is a personal AI assistant at myzaru.com that helps with messages, planning, follow-ups and scheduling, and shows you what it did. Its terminal harness is open source: [zaru-cli](https://github.com/100monkeys-ai/zaru-cli).
+
+### [AEGIS](https://100monkeys.ai/?utm_source=github&utm_medium=referral&utm_campaign=push-2026-10-28)
+
+AEGIS is a self-hosted orchestrator that runs autonomous agents in isolated, policy-enforced runtimes with durable FSM state. Open source, AGPL-3.0, pre-alpha: [aegis-orchestrator](https://github.com/100monkeys-ai/aegis-orchestrator). Install:
+
+```bash
+curl -fsSL https://get.100monkeys.ai | bash
+```
+
+---
+
 ## The Problem
 
 > *An open-source agentic framework reached 180,000 GitHub stars. Forbes called it "a security nightmare." Cisco agreed. 1,800+ installations were exposed to the public internet with no authentication. Agents ran with root access, live credit cards, and unlimited filesystem permissions. A single bad prompt could delete the database.*
